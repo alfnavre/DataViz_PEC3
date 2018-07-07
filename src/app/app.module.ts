@@ -1,4 +1,18 @@
-import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
-import {AppModule} from './app/app.module';
- 
-platformBrowserDynamic().bootstrapModule(AppModule)
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppComponent } from './app.component';
+import { ScatterComponent } from './scatter/scatter.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    ScatterComponent
+  ],
+  imports: [
+    BrowserModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
